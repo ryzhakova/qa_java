@@ -24,7 +24,7 @@ public class CatTest {
     }
 
     @Test
-    public void testGetFood() throws Exception {
+    public void getFoodTest() throws Exception {
         Cat cat = new Cat(feline);
         Mockito.when(feline.eatMeat()).thenReturn(List.of("Животные", "Птицы"));
         List<String> actual = cat.getFood();
